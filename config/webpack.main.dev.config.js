@@ -11,5 +11,5 @@ const config = require("./webpack.main.prod.config");
 module.exports = merge(config, {
     mode: "development",
     //默认 false，也就是不不开启
-    watch: true,
+    watch: false,
 });

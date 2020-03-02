@@ -1,13 +1,8 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Home from "./container/home";
 
-function App() {
-  return (
-    <div className="App">
-      <img src={logo} className="App-logo" alt="logo" />
-    </div>
-  );
-}
+const App = (props: any) => {
+  return <Home {...props} />
+};
 
 export default App;

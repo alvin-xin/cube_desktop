@@ -9,18 +9,20 @@ import path from "path";
 import { app, BrowserWindow } from "electron";
 import * as isDevEnv from "electron-is-dev";
 
+app.allowRendererProcessReuse = true;
+
 function createWindow () {
 
     // 创建浏览器窗口
     let mainWindow = new BrowserWindow({
-        "width": 800,
-        "height":600,
-        "minWidth":400,
-        "minHeight":300,
+        "width": 1010,
+        "height":716,
+        "minWidth":800,
+        "minHeight":600,
         frame: false,
         autoHideMenuBar: false,
         titleBarStyle: 'hidden',
-        fullscreen: true,
+        fullscreen: false,
         webPreferences: {
             nodeIntegration: true,
             devTools: isDevEnv
